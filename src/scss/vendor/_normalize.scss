@@ -429,12 +429,20 @@ th {
    ========================================================================== */
 
 /**
- * Remove margins from headers
+ * Remove margins from headers and lists
  */
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul {
   margin: 0;
+}
+
+/**
+ * Remove padding from lists
+ */
+ul {
+  padding: 0;
 }

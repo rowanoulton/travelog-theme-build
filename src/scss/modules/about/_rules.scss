@@ -1,7 +1,7 @@
 @import "modules/about/variables";
 @mixin travelog-about {
     .about {
-        width: 450px;
+        width: $about-width;
         margin: 0 auto;
     }
 
@@ -18,10 +18,10 @@
     }
 
     .about-body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: $title-font;
         float: right;
-        width: 295px;
-        color: #eee;
+        width: $about-body-width;
+        color: $inverse-text-colour;
     }
 
     .about-body-title {
@@ -34,19 +34,19 @@
     }
 
     .about-body-description {
-        font-size: 12px;
+        font-size: $caption-text-size;
         letter-spacing: 1px;
     }
 
     .about-body-link {
-        color: #eee;
-        font-size: 12px;
+        color: $inverse-text-colour;
+        font-size: $caption-text-size;
         font-weight: bold;
         margin-bottom: 7px;
         display: inline-block;
 
         &:hover {
-            color: darken(#598c7d, 10%);
+            color: darken($link-colour, 10%);
         }
 
         img { 
@@ -56,7 +56,7 @@
         }
     }
 
-    @media only screen and (max-width : 450px) {
+    @media only screen and (max-width : $about-width) {
         .about-avatar,
         .about-body {
             float: none;
@@ -64,8 +64,8 @@
         }
 
         .about-avatar {
-            width: 70px;
-            height: 70px;
+            width: $about-avatar-shrunk-width;
+            height: $about-avatar-shrunk-height;
         }
 
         .about-body {

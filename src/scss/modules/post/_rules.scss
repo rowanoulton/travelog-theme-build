@@ -6,7 +6,7 @@
 
     .post-header {
         padding-left: 35px;
-        min-height: 42px;
+        min-height: $post-header-height;
         background-repeat: no-repeat;
         background-position: left center;
         background-color: transparent;
@@ -23,7 +23,7 @@
 
     .post-header-title {
         margin-bottom: 5px;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: $title-font;
         font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
@@ -31,7 +31,7 @@
     }
 
     .post-header-date {
-        font-family: 'Chaparral Pro', 'American Typewriter', Courier, serif;
+        font-family: $caption-font;
         font-style: italic;
         font-weight: normal;
         color: #444;
@@ -49,9 +49,9 @@
 
     .post-image-caption {
         vertical-align: middle;
-        font-family: 'Chaparral Pro', 'American Typewriter', Courier, serif;
+        font-family: $caption-font;
         font-style: italic;
-        color: #777;
+        color: $caption-colour;
         background: #f6f6f6;
         padding: 15px 20px 13px;
         text-align: center;
@@ -87,29 +87,29 @@
     }
 
     .post-footer-tag {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: $title-font;
         font-weight: bold;
         display: inline;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: $caption-text-size;
         margin-right: 5px;
         letter-spacing: 1px;
     }
 
     .post-footer-location {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: $title-font;
         font-weight: bold;
-        font-size: 12px;
-        color: #777;
+        font-size: $caption-text-size;
+        color: $caption-colour;
         float: right;
-        min-height: 21px;
-        line-height: 21px;
+        min-height: $post-footer-location-height;
+        line-height: $post-footer-location-line-height;
         padding-right: 51px;
         letter-spacing: 1px;
         background: url(/assets/img/icon-location.png) no-repeat right center transparent;
 
         &:hover {
-            color: #598c7d;
+            color: $link-colour;
         }
     }
 }

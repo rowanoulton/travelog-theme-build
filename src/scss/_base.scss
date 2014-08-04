@@ -9,9 +9,9 @@ body {
 }
 
 body {
-    font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #222;
+    font-family: $regular-font;
+    font-size: $regular-text-size;
+    color: $text-colour;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -21,6 +21,6 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: #598c7d;
+        color: $link-colour;
     }
 }

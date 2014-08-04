@@ -11,12 +11,12 @@
 
     // Sticky footer trick, see http://css-tricks.com/snippets/css/sticky-footer/
     min-height: 100%;
-    margin-bottom: -262px;
+    margin-bottom: (-1 * $footer-height);
 
     &:after {
       content: "";
       display: block;
-      height: 262px;
+      height: $footer-height;
     }
 }
 
@@ -40,8 +40,8 @@ header {
 }
 
 h1 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-family: $title-font;
+    font-size: $regular-text-size;
     font-weight: bold;
     margin: 0 0 5px;
     text-transform: uppercase;
@@ -49,17 +49,17 @@ h1 {
 }
 
 h2 {
-    font-family: 'American Typewriter', Courier, serif;
-    font-size: 14px;
+    font-family: $subtitle-font;
+    font-size: $regular-text-size;
     margin: 0;
-    color: #aaaaaa;
+    color: $subtitle-colour;
     font-weight: normal;
 }
 
 footer {
     background-image: url(/assets/img/banner.jpg);
     background-size: cover;
-    height: 262px;
+    height: $footer-height;
     width: 100%;
     display: table;
 }

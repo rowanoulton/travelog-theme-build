@@ -1,6 +1,10 @@
 @import "compass/css3";
 @import "vendor/normalize";
 
+* { 
+    @include box-sizing(border-box);
+}
+
 html,
 body {
     width: 100%;

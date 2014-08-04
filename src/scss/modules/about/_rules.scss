@@ -1,0 +1,82 @@
+@import "modules/about/variables";
+@mixin travelog-about {
+    .about {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .about-wrap {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .about-avatar {
+        @include border-radius(100%);
+        overflow: hidden;
+        float: left;
+        border: 3px solid #fff;
+    }
+
+    .about-body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        float: right;
+        width: 295px;
+        color: #eee;
+    }
+
+    .about-body-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+        margin: 0 0 10px;
+        letter-spacing: 1px;
+    }
+
+    .about-body-description {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .about-body-link {
+        color: #eee;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 7px;
+        display: inline-block;
+
+        &:hover {
+            color: darken(#598c7d, 10%);
+        }
+
+        img { 
+            margin-right: 5px; 
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    @media only screen and (max-width : 450px) {
+        .about-avatar,
+        .about-body {
+            float: none;
+            text-align: center;
+        }
+
+        .about-avatar {
+            width: 70px;
+            height: 70px;
+        }
+
+        .about-body {
+            width: 80%;
+            margin: 10px auto 0;
+        }
+
+        .about {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

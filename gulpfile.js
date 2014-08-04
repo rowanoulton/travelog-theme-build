@@ -37,7 +37,7 @@ gulp.task('images', function () {
 		.pipe(gulp.dest(dest));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['images', 'compass'], function () {
 	gulp.watch('src/scss/**', ['compass']);
 	gulp.watch('src/images/**', ['images']);
 });

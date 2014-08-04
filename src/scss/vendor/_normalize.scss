@@ -441,8 +441,9 @@ ul {
 }
 
 /**
- * Remove padding from lists
+ * Remove padding and list style from lists
  */
 ul {
   padding: 0;
+  list-style: none;
 }

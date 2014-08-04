@@ -22,6 +22,10 @@ body {
 
 a {
     text-decoration: none;
+
+    &:hover {
+        color: #598c7d;
+    }
 }
 
 #ribbon {
@@ -156,7 +160,7 @@ h2 {
     float: right;
     min-height: 21px;
     line-height: 21px;
-    padding-right: 54px;
+    padding-right: 51px;
     letter-spacing: 1px;
     background: url(/assets/img/icon-location.png) no-repeat right center transparent;
 }

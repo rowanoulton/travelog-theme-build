@@ -163,4 +163,8 @@ h2 {
     padding-right: 51px;
     letter-spacing: 1px;
     background: url(/assets/img/icon-location.png) no-repeat right center transparent;
+
+    &:hover {
+        color: #598c7d;
+    }
 }
